@@ -1,2 +1,2 @@
-# teleburn_tools
-Tools for Teleburning
+# teleburn-tools
+Tools for teleburning
