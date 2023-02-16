@@ -1,5 +1,5 @@
 # teleburn-tools
-Tools for teleburning.
+Tools for teleburning. Based off of [casey/ord@teleburn](https://github.com/casey/ord/blob/5bfb1bab7bd4e85866574b4c80a6d4b848b8a519).
 
 This is a rough draft at a better package that can be used and include other
 mappings. Right now there is only a hack on the data structure in
