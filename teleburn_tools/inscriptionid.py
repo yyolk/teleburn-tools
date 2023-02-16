@@ -30,12 +30,12 @@ class InscriptionId:
         sha = sha256(self.dumpb())
         return f"0x{sha.hexdigest()[:40]}"
 
-def from_txn_index(txn: str, index: int):
+def from_txn_index(txn: str, index: int) -> InscriptionId:
     """Construct the InscriptionId correctly, given a txn hex string"""
     return InscriptionId(bytes.fromhex(txn)[::-1], index)
 
-def from_ordinal_id(ordinalid: str):
+def from_ordinalid(ordinalid: str) -> InscriptionId:
     """Takes an ``ordinalid`` returns an ``InscriptionId``"""
     txn, index = ordinalid.split("i")
-    return from_txn_index(txn, index)
+    return from_txn_index(txn, int(index))
 
